@@ -14,8 +14,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pages-search-result.html',
 })
 export class PagesSearchResultPage {
+  private data: any = {};
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(this.navParams.get('data'));
+    this.data = this.navParams.get('data');
   }
 
   ionViewDidLoad() {

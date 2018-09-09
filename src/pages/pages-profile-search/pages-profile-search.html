@@ -7,11 +7,11 @@
 <ion-content padding>
   <ion-item>
     <ion-label floating>Git username</ion-label>
-    <ion-input type="text" placeholder="Git username" maxlength="15" [(ngModel)]="username" minlength="3"></ion-input>
+    <ion-input type="text" placeholder="Git username" maxlength="15" [(ngModel)]="data.username" minlength="3"></ion-input>
   </ion-item>
   <ion-fab middle center>
-    <button ion-fab color="danger" color="primary">
-        <ion-icon name="search" (click)="getUserInformation()"></ion-icon>
+    <button ion-fab color="danger" color="primary" (click)="getUserInformation()">
+        <ion-icon name="search"></ion-icon>
     </button>
   </ion-fab>
 </ion-content>

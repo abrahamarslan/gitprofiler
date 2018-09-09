@@ -15,13 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PagesProfileSearchPage {
 
+  private data: any = {}
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   getUserInformation() {
-    this.navCtrl.push('PagesSearchResultPage');
+    console.log(this.data);
+    this.navCtrl.push('PagesSearchResultPage', {data: this.data});
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PagesProfileSearchPage');
   }
 
 }
