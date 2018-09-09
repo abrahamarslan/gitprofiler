@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ServicesGitHubServiceProvider } from '../providers/services-git-hub-service/services-git-hub-service';
+import { GitHubServiceProvider } from '../providers/git-hub-service/git-hub-service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ServicesGitHubServiceProvider,
+    GitHubServiceProvider
   ]
 })
 export class AppModule {}
