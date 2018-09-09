@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Profile Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Git username</ion-label>
+    <ion-input type="text" placeholder="Git username" maxlength="15" [(ngModel)]="username" minlength="3"></ion-input>
+  </ion-item>
+  <ion-fab middle center>
+    <button ion-fab color="danger" color="primary">
+        <ion-icon name="search" (click)="getUserInformation()"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>
