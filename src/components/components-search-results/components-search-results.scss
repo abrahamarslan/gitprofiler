@@ -1,3 +1,142 @@
 components-search-results {
+  // Common variables go here
+  $bg: #F1F1F1;
+
+  // Images - Preload images
+  $pre-img-bg: rgba(#FFF, .3);
+
+  // Images - Preload images - Spinner on load
+  $spinner-size: 50px;
+  $spinner-svg-size: 28px;
+  $spinner-color: #F1F1F1;
+
+  $pre-img-ratios: ();
+  $theme-color-1: #FFFFFF;
+  $theme-color-1-a: darken($theme-color-1, 3%);
+  $theme-color-1-b: darken($theme-color-1, 6%);
+  $theme-color-1-c: darken($theme-color-1, 12%);
+  $theme-color-1-d: darken($theme-color-1, 24%);
+
+  $theme-color-2: rgba(#000000, .8);
+  $theme-color-2-a: lighten($theme-color-2, 10%);
+  $theme-color-2-b: lighten($theme-color-2, 20%);
+  $theme-color-2-c: lighten($theme-color-2, 40%);
+  $theme-color-2-d: lighten($theme-color-2, 60%);
+  $profile-bg: #46a3c2;
+  $profile-alt-bg: $theme-color-1;
+  $profile-color: $theme-color-1;
+  $profile-alt-color: $theme-color-1-d;
+
+  $profile-avatar-image-ratio: 1 1;
+
+  .profile-view
+  {
+    background-color: $profile-alt-bg;
+    color: $profile-color;
+  }
+
+  .user-col
+  {
+    background-color: $profile-bg;
+
+    .user-image-container
+    {
+      width: 95px;
+      margin: 0px auto;
+      margin-top: 20px;
+    }
+
+    .avatar-image
+    {
+      &.pre-img
+      {
+        border-radius: 50%;
+      }
+
+      img
+      {
+        border-radius: 50%;
+        border: 2px solid $profile-color;
+        width: 100%;
+      }
+    }
+
+    .user-name
+    {
+      text-align: center;
+      color: $profile-color;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .username
+    {
+      text-align: center;
+      color: rgba($profile-color, .7);
+    }
+
+    .user-social
+    {
+      text-align: center;
+      color: $profile-color;
+    }
+
+    .user-bio
+    {
+      text-align: center;
+      color: rgba($profile-color, .8);
+      margin: 0px 10% 12%;
+    }
+  }
+
+  .profile-list
+  {
+    .list
+    {
+      background-color: $profile-color;
+    }
+
+    .profile-divider
+    {
+      height: 35px;
+    }
+
+    .list-item
+    {
+      margin-left: 8px;
+      border-left: none;
+
+      &:last-child
+      {
+        border-bottom: none;
+      }
+
+      .item-content
+      {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 8px;
+      }
+
+      .main-text
+      {
+        color: $profile-bg;
+      }
+
+      .badge
+      {
+        font-weight: 300;
+        font-size: 18px;
+        color: $profile-alt-color;
+        top: 11px;
+      }
+
+      .icon
+      {
+        color: $profile-alt-color;
+        font-size: 22px;
+      }
+    }
+  }
 
 }
